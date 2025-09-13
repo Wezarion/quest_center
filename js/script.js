@@ -33,6 +33,9 @@
 
         form.addEventListener("submit", (event) => {
             event.preventDefault();
+
+            const newTaskContent = document.querySelector(".js-newTask").value.trim();
+            console.log(newTaskContent);
         });
     };
 
