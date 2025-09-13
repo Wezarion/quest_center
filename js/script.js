@@ -33,8 +33,7 @@
         
         removeButtons.forEach((removeButtons, index) => {
             removeButtons.addEventListener("click", () => {
-                tasks.splice(index, 1);
-                render();
+                removeTask(index);
             });
         });
 
@@ -60,9 +59,11 @@
                     ${task.content}
                 </li>
             `;
-        };
+        }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+
+        bindEvents();
     };
 
 
