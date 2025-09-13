@@ -18,9 +18,33 @@
             render();
     };
 
-    const removeTask = (index) => {
-            tasks.splice(index, 1);
+    const removeTask = (taskIndex) => {
+            tasks.splice(taskIndex, 1);
             render();
+    };
+
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+    }
+
+    const bindEvents = () => {
+        const removeButtons = document.querySelectorAll(".js-remove");
+        
+        removeButtons.forEach((removeButtons, index) => {
+            removeButtons.addEventListener("click", () => {
+                tasks.splice(index, 1);
+                render();
+            });
+        });
+
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        
+        toggleDoneButtons.forEach((toggleDoneButtons, index) => {
+            toggleDoneButtons.addEventListener("click", () => {
+                toggleTaskDone(index);
+            });
+        });
     };
 
     const render = () => {
@@ -31,6 +55,7 @@
                 <li
                     ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                 >
+                    <button class="js-done">zrobione?</button>
                     <button class="js-remove">usuń</button>
                     ${task.content}
                 </li>
@@ -38,15 +63,6 @@
         };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
-
-        const removeButtons = document.querySelectorAll(".js-remove");
-        
-        removeButtons.forEach((removeButtons, index) => {
-            removeButtons.addEventListener("click", () => {
-                tasks.splice(index, 1);
-                render();
-            });
-        });
     };
 
 
