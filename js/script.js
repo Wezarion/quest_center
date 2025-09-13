@@ -1,13 +1,5 @@
 {
     const tasks = [
-        {
-            content: "nauczyć sie",
-            done: false,
-        },
-        {
-            content: "zjesc obiad",
-            done: true
-        },
     ];
 
     const addNewTask = (newTaskContent) =>{
@@ -54,9 +46,9 @@
                 <li
                     ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                 >
-                    <button class="js-done">zrobione?</button>
-                    <button class="js-remove">usuń</button>
+                    <button class="js-done">zrobione?</button>                    
                     ${task.content}
+                    <button class="js-remove">usuń</button>
                 </li>
             `;
         }
