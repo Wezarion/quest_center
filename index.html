@@ -9,15 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <form class="container js-form">
-        <input class="js-newTask">
-        <button>Dodaj Zadanie</button>
+    <h1 class="form__title">
+        Lista zadań
+    </h1>
+
+    <h2 class="form__main--question">
+        Dodaj zadanie
+    </h2>
+    
+    <form class="form__main js-form">
+        <input class="js-newTask" placeholder="Co do zrobienia?">
+        <button class="form__button--addTask">Dodaj Zadanie</button>
     </form>
 
-    <ul class="js-tasks"></ul>
+    <ul class="form__tasks js-tasks"></ul>
 </body>

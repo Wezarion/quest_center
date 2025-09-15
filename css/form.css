@@ -1,0 +1,42 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    "hd hd hd hd hd"
+    "mq mq mq mq mq"
+    "ma ma ma ma ma"
+    "se se se se se"
+    "se se se se se"
+
+}
+
+.form__item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form__title {
+    grid-area: hd;
+}
+
+.form__main {
+    grid-area: ma;
+    border: 1px solid #ccc;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+.form__main--question {
+    grid-area: mq;
+    border: 1px solid #ccc;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+.form__tasks {
+    grid-area: se;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+}
