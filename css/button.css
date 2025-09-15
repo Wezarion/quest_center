@@ -1,15 +1,15 @@
 .form__button {
-
+    border: 1px solid ;
 }
 
 .form__button--addTask {
-
+    background-color: teal;
 }
 
-.form__button--add {
-    
+.form__button--done {
+    background-color: green;
 }
 
 .form__button--remove {
-    
+    background-color: red;
 }
