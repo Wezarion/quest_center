@@ -1,5 +1,7 @@
 .form {
     display: grid;
+    max-width: 980px;
+    grid-gap: colapse;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
     "hd hd hd hd hd"
@@ -10,14 +12,12 @@
 
 }
 
-.form__item {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-
 .form__title {
     grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
 }
 
 .form__main {
@@ -37,6 +37,14 @@
 .form__tasks {
     grid-area: se;
     border: 1px solid #ccc;
-    margin: 20px;
+    margin: 0px 20px;
+    padding: 10px;
+    list-style: none;
+}
+
+.form__tasks--list {
+    grid-area: se;
+    border: 1px solid #ccc;
+    margin: 20px 20px 0px;
     padding: 10px;
 }
