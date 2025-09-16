@@ -1,16 +1,21 @@
 .button {
-    border: 1px solid ;
+    border: none;
+    height: 30px;
+    min-width: 30px;
 }
 
-.button--addTask {
+.button__addTask {
     background-color: teal;
+    color: white;
+}
+
+.button__done {
+    background-color: green;
+    color: white;
     
 }
 
-.button--done {
-    background-color: green;
-}
-
-.button--remove {
+.button__remove {
     background-color: red;
+    color: white;
 }

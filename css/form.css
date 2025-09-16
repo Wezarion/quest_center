@@ -2,20 +2,17 @@
     display: grid;
     max-width: 980px;
     background-color: #ededed;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1fr);
     grid-template-areas:
-    "hd hd hd hd hd"
-    "mq mq mq mq mq"
-    "ma ma ma ma ma"
-    "se se se se se"
-    "sl sl sl sl sl"
+    "hd"
+    "mq"
+    "ma"
+    "se"
+    "sl"
 }
 
 .form__title {
     grid-area: hd;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     margin: 20px;
 }
 
@@ -45,9 +42,20 @@
 
 .form__tasks--list {
     grid-area: sl;
+    display:flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     margin: 0px 20px;
     padding: 10px;
     list-style: none;
     background-color: white;
+}
+
+.form__tasks--content {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form__tasks--done {
+    text-decoration: line-through #ccc;
 }
