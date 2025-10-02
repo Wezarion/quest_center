@@ -1,61 +1,32 @@
 .form {
-    display: grid;
-    max-width: 980px;
-    background-color: #ededed;
-    grid-template-columns: repeat(1fr);
-    grid-template-areas:
-    "hd"
-    "mq"
-    "ma"
-    "se"
-    "sl"
-}
-
-.form__title {
-    grid-area: hd;
-    margin: 20px;
+    margin: 10px 0px;
+    background-color: white;
+    box-shadow: 0 0 6px #ccc;
 }
 
 .form__main {
-    grid-area: ma;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 16px;
     border: 1px solid #ccc;
-    margin: 0px 20px;
-    padding: 10px;
-    background-color: white;
+    padding: 16px;
 }
 
-.form__main--question {
-    grid-area: mq;
+@media(max-width: 800px) {
+    .form__main {
+    grid-template-columns: 1fr;
+    }
+}
+
+.form__header {
+    font-size: 18px;
     border: 1px solid #ccc;
-    margin: 0px 20px;
-    padding: 10px;
-    background-color: white;
+    padding: 15px;
+    margin-bottom: 0;
 }
 
 .form__tasks {
-    grid-area: se;
     border: 1px solid #ccc;
-    margin: 20px 20px 0px;
-    padding: 10px;
-    background-color: white;
-}
-
-.form__tasks--list {
-    grid-area: sl;
-    display:flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    margin: 0px 20px;
-    padding: 10px;
-    list-style: none;
-    background-color: white;
-}
-
-.form__tasks--content {
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
-}
-
-.form__tasks--done {
-    text-decoration: line-through #ccc;
+    padding: 15px;
+    margin-top: 0;
 }

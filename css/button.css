@@ -2,20 +2,44 @@
     border: none;
     height: 30px;
     min-width: 30px;
+    border: none;
 }
 
 .button__addTask {
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
+}
+
+.button__addTask:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.button__addTask:active {
+    background-color: hsl(180, 100%, 35%);
 }
 
 .button__done {
-    background-color: green;
-    color: white;
-    
+    background-color: hsl(120, 100%, 25%);
+    color: white;   
+}
+
+.button__done:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.button__done:active {
+    background-color: hsl(120, 100%, 35%);
 }
 
 .button__remove {
-    background-color: red;
+    background-color: hsl(0, 100%, 50%);
     color: white;
+}
+
+.button__remove:hover {
+    background-color: hsl(0, 100%, 55%);
+}
+
+.button__remove:active {
+    background-color: hsl(0, 100%, 60%);
 }
