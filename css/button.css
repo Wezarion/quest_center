@@ -3,6 +3,7 @@
     height: 30px;
     min-width: 30px;
     border: none;
+    transition: 1s;
 }
 
 .button__addTask {
@@ -12,6 +13,7 @@
 
 .button__addTask:hover {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.2);
 }
 
 .button__addTask:active {
