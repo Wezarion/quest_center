@@ -1,4 +1,5 @@
 .button {
+    padding: 5px;
     border: none;
     height: 30px;
     min-width: 30px;
@@ -34,14 +35,14 @@
 }
 
 .button__remove {
-    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(0, 100%, 30%);
     color: white;
 }
 
 .button__remove:hover {
-    background-color: hsl(0, 100%, 55%);
+    background-color: hsl(0, 100%, 40%);
 }
 
 .button__remove:active {
-    background-color: hsl(0, 100%, 60%);
+    background-color: hsl(0, 100%, 50%);
 }

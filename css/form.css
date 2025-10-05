@@ -1,10 +1,4 @@
 .form {
-    margin: 10px 0px;
-    background-color: white;
-    box-shadow: 0 0 6px #ccc;
-}
-
-.form__main {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 16px;
@@ -13,20 +7,17 @@
 }
 
 @media(max-width: 800px) {
-    .form__main {
+    .form {
     grid-template-columns: 1fr;
     }
 }
 
-.form__header {
-    font-size: 18px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 0;
+.form__input {
+    padding: 5px;
 }
 
 .form__tasks {
     border: 1px solid #ccc;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
     margin-top: 0;
 }
