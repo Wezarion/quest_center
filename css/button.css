@@ -65,3 +65,7 @@
 .button__hiden:active {
     color: hsl(180, 100%, 40%);
 }
+
+.button__hiden:disabled {
+    color: #ccc;
+}

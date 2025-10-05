@@ -100,13 +100,13 @@
         const markAllDoneButton = document.querySelector(".js-markAllDone");
 
         if (markAllDoneButton) {
-            markAllDoneButton.addEventListener("clik", markAllTasksDone);
+            markAllDoneButton.addEventListener("click", markAllTasksDone);
         }
 
         const toggleHideTasksButton = document.querySelector(".js-toggleHideDoneTasks");
 
         if (toggleHideTasksButton) {
-            toggleHideTasksButton.addEventListener("clik", toggleHideDoneTasks);
+            toggleHideTasksButton.addEventListener("click", toggleHideDoneTasks);
         }
     };
 
