@@ -43,7 +43,7 @@
         render();
     }
 
-    const bindEvents = () => {
+    const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         
         removeButtons.forEach((removeButtons, index) => {
@@ -51,7 +51,9 @@
                 removeTask(index);
             });
         });
+    };
 
+    const bindToggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-done");
         
         toggleDoneButtons.forEach((toggleDoneButtons, index) => {
@@ -85,10 +87,10 @@
             return;
         }
         buttonElement.innerHTML = `
-            <button class="button button__hiden js-toggleHideDoneTasks">
+            <button class="button button__hiden js-toggleHideDoneTasks js-buttons">
                 ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button class="button button__hiden js-markAllDone" ${ tasks.every(({ done }) => done) ? " disabled" : ""}>
+            <button class="button button__hiden js-markAllDone js-buttons"${ tasks.every(({ done }) => done) ? " disabled" : ""}>
                 Ukończ wszystkie
             </button>
         `;
@@ -112,7 +114,8 @@
         renderTasks();
         renderButtons();
 
-        bindEvents();
+        bindRemoveEvents();
+        bindToggleDoneEvents();
         bindButtonEvents();
     };
 
