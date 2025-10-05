@@ -7,6 +7,20 @@
 .section__header {
     font-size: 18px;
     border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
     margin-bottom: 0;
+}
+
+@media(max-width: 800px) {
+    .section__header {
+    flex-direction: column;
+    }
+}
+
+.section__header--height {
+    margin: 0px;
 }

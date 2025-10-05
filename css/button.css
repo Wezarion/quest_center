@@ -1,9 +1,8 @@
 .button {
     padding: 5px;
     border: none;
-    height: 30px;
+    min-height: 30px;
     min-width: 30px;
-    border: none;
     transition: 1s;
 }
 
@@ -14,7 +13,7 @@
 
 .button__addTask:hover {
     background-color: hsl(180, 100%, 30%);
-    transform: scale(1.2);
+    transform: scale(1.25);
 }
 
 .button__addTask:active {
@@ -45,4 +44,24 @@
 
 .button__remove:active {
     background-color: hsl(0, 100%, 50%);
+}
+
+.button__hiden {
+    background-color: transparent;
+    color: teal;
+    margin: 0 20px 0 0;
+}
+
+@media(max-width: 800px) {
+    .button__hiden {
+    margin: 10px;
+    }
+}
+
+.button__hiden:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.button__hiden:active {
+    color: hsl(180, 100%, 40%);
 }

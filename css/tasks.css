@@ -11,3 +11,7 @@
 .tasks__content--done {
     text-decoration: line-through;
 }
+
+.tasks__hiden {
+    display: none;
+}
